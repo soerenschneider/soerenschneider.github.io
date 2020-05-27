@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on soerenschneider</title>
+    <link>https://www.soerenschneider.com/categories/</link>
+    <description>Recent content in Categories on soerenschneider</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Nov 2018 14:44:35 +0200</lastBuildDate>
+    
+	<atom:link href="https://www.soerenschneider.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>professional</title>
+      <link>https://www.soerenschneider.com/categories/professional/</link>
+      <pubDate>Thu, 01 Nov 2018 14:44:35 +0200</pubDate>
+      
+      <guid>https://www.soerenschneider.com/categories/professional/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
