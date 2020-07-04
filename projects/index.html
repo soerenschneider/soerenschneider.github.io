@@ -115,10 +115,10 @@
 <p>When using Cloud Functions we wanted to be able to use fine-grained monitoring for our functions. Due to the nature of Cloud Functions still being early beta, it wasn&rsquo;t possible to peer them to our GKE network. Therefore we weren&rsquo;t able to use Prometheus Pushgateway (as it is exposed only inside the clusters) or scrape them like regular targets (due to their low runtime, networking, &hellip;).</p>
 <p>As the functions were all triggered using Pub Sub, we decided to write a Prometheus exporter that receives metrics in raw Prometheus text format dispatched via Pub Sub once the function finished.</p>
 <h3 id="aws-cloud-architecture--migration">AWS Cloud Architecture &amp; Migration</h3>
-<p>The most challenging task undoubtedly was planning and migrating to the cloud architecture at AWS. Due to multiple constellations, the end date of the migration was already known before real planning started. After <em>a lot</em> of small, nightly iterations the transition was done, but not the work. The initial move involved almost only manual work, after the move to AWS I started to replicate the environment using IaC.</p>
-<p>With an ever increasing size of both team members and services, conflicts of the monolithic architecture became apparent. The first container orchestration used, was ECS. Due to its nature, being as dull as it is solid, it is the ideal solution for understaffed departments. Later on, there was the big shift towards a kops-created Kubernetes, unfortunately operated only by me.</p>
+<p>The most challenging task undoubtedly was planning and migrating to the cloud architecture at AWS. Due to multiple constellations, the end date of the migration was already known before real planning started. After <em>a lot</em> of small, nightly iterations the transition was done, but not the work. The initial move involved almost only manual work, after the move to AWS I started to replicate the environment using IAC.</p>
+<p>With an ever increasing size of both team members and services, conflicts of the monolithic architecture became apparent. The first container orchestration used, was ECS. Due to its nature, being as dull as solid, it is the ideal solution for understaffed departments. Later on, there was the big shift towards a kops-created Kubernetes, unfortunately operated only by me.</p>
 <h3 id="business-partner-data-curation">Business Partner Data Curation</h3>
-<p>Concept and realization of an easily configurable, high-performance service that accepts business partner data which is piped through several &ldquo;curator&rdquo; elements in order to increase data quality. The list of elements was configured with a configuration file that can be overridden by the the service call. A single data element could take various paths down the curator based on its attributes, e.g. a certain country, a certain &ldquo;legal form&rdquo;. A curation element could alter (e.g. transliteration) and also flag (e.g. &ldquo;legal form is invalid for given country&rdquo;) data.</p>
+<p>Concept and realization of an easily configurable, high-performance concurrent service that improves business partner data. The data was read from a queue, ran through several <em>curation elements</em> and was written to a new MongoDB collection. The list of elements and their order was dymanic and interchangable. A single data element could take various paths down the curator based on its attributes, e.g. a certain country, a certain &ldquo;legal form&rdquo;. A curation element could alter (e.g. transliteration) and also flag (e.g. &ldquo;legal form is invalid for given country&rdquo;) data. Several permutations of configuration could be performed, to find the best settings for input data.</p>
 <h3 id="providing-scalable-enterprise-ready-semantic-mediawiki-stacks">Providing scalable, enterprise-ready Semantic MediaWiki stacks</h3>
 <p>Using both CloudFormation and Ansible I was able to roll-out a scalable <a href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki">Semantic Media Wiki</a> providing Single Sign On capabilities with few effort. The resulting VMs were part of Auto Scaling Groups and were backed by Docker images. SPARQL queries were answered by an Apache Fuseki.</p>
 <h1 id="private-projects">Private projects</h1>
@@ -126,7 +126,7 @@
 <p>You got your dotfiles checked in git repository? That&rsquo;s cool, but that doesn&rsquo;t really cut it for me, personally. There&rsquo;s still no packages installed. What about secrets? What about different configuration for different machines?</p>
 <p>I securely bootstrap my whole environment within a couple of minutes, only using my personal nitrokey, <a href="https://gitlab.com/soerenschneider/bootstrap">an ansible playbook and a little bit of shell script</a>. All dotfiles are checked out &amp; linked, software is being compiled, all packages installed and local passwords are safely initialized.</p>
 <h3 id="notification-on-late-trams">Notification on Late Trams</h3>
-<p>Imagine you live in a city, let&rsquo;s call it &lsquo;Cologne&rsquo;, and your local public transportation company enjoys being spontaneous. Its OpenData is more static than the melting ice caps, so we need to fetch, parse and process the interesting bits. There are 4 microservices that communicate via loosely coupled streams based on redis. Did someone say &lsquo;over-engineered&rsquo;? Maybe, but it was a fun project!</p>
+<p>Living in Cologne you&rsquo;ll realize the local public transportation company enjoys being spontaneous. Its <a href="https://kvb.koeln/service/open_data.html">&ldquo;OpenData&rdquo;</a> is more static than melting ice caps, so we need to fetch, parse and process the interesting bits ourselfes. There are 4 microservices that communicate via loosely coupled streams based on redis. Did someone say &lsquo;over-engineered&rsquo;? Maybe, but it was a fun project!</p>
 <ul>
 <li><a href="https://gitlab.com/soerenschneider/kfailb-scraper">scraping tram data</a></li>
 <li><a href="https://gitlab.com/soerenschneider/kfailb-parser">parsing scraped data</a></li>
@@ -134,7 +134,7 @@
 <li><a href="https://gitlab.com/soerenschneider/k-fail-banal">storing data long term</a></li>
 </ul>
 <h3 id="home-automation">Home Automation</h3>
-<p>Automating your home is a perfect chance to sink a ton of money for getting an insecure vendor lock in. Alternatively, you can do it yourself using Open Source components, which is super fun. I built some projects to read sensor data from my Raspberry Zero &amp; Arduino fleet, streaming it via MQTT and exposing metrics. Metrics allow both observability and also alerting on sensor data, e.g. humidity.</p>
+<p>&ldquo;<em>I paid a lot of bucks for home automation and all I got is this lousy t-shirt</em>&quot;. Sounds familiar? Alternatively, you can do it yourself using Open Source components, which is super fun. I built some projects to read sensor data from my Raspberry Zero &amp; Arduino fleet, streaming it via MQTT and exposing metrics. Metrics allow both observability and also alerting on sensor data, e.g. humidity.</p>
 <ul>
 <li><a href="https://gitlab.com/soerenschneider/pir-motion-raspberry">reading motion sensor data</a></li>
 <li><a href="https://gitlab.com/soerenschneider/mqtt-tempsensor">reading temperature sensor data</a></li>
@@ -142,25 +142,26 @@
 <li><a href="https://gitlab.com/soerenschneider/rc-switch-mqtt">executing commands via mqtt/home assistant switch</a></li>
 </ul>
 <h3 id="automate-boring-stuff">Automate Boring Stuff</h3>
-<p>I wrote <a href="https://gitlab.com/soerenschneider/ansible-roles">plenty of Ansible modules</a> to roll-out and automate <em>a lot</em> of workloads on my machines. I picked up the SRE approach, but I have way lower toil threshold and try to automate almost everything. By adhering this, I can move fast and migrate whole systems flawlessly. The ultimate goal is to have machines being 100% autonomously. For machines running on bare metal, I use Hashicorp Packer in combination with Ansible to build immutable KVM images and Terraform using the <a href="https://github.com/dmacvicar/terraform-provider-libvirt">libvirt provider</a> to roll out the changes.</p>
+<p>One downside of running (a lot of) self-hosted services is the resulting overhead of keeping everything running and secure. My ambition is to run and maintain all these (decentral) workloads with as little manual intervention as possible. Therefore I wrote <a href="https://gitlab.com/soerenschneider/ansible-roles">plenty of Ansible roles</a>, terraform modules and a small release management tool to automate <em>almost</em> everything. Thanks to automation, replacing cattle became an easy, fast and safe task.</p>
 <h3 id="oberservability">Oberservability</h3>
-<p>I&rsquo;m running a lot of VMs and physical machines that are on very different locations, so I can&rsquo;t (and I don&rsquo;t want) to crawl logs, so I need to rely on observability.</p>
+<p>Automation is nice, but all the VMs and machines, running at different physical locations also need observability. Currently, each location is running its own prometheus stack &amp; grafana, but there&rsquo;s plans to use a centralized solution to send alerts from, such as <a href="https://github.com/cortexproject/cortex">cortex</a> or <a href="https://github.com/thanos-io/thanos">thanos</a>. I also wrote some KISS prometheus exporters, most of them using the node_exporter textfile functionality.</p>
 <ul>
+<li><a href="https://gitlab.com/soerenschneider/grafana">immutable grafana</a></li>
 <li><a href="https://gitlab.com/soerenschneider/mtail-programs">mtail programs</a></li>
 <li><a href="https://gitlab.com/soerenschneider/dhcpd-leases-exporter">dhcpd exporter</a></li>
 <li><a href="https://gitlab.com/soerenschneider/fail2ban-exporter">fail2ban exporter</a></li>
+<li><a href="https://gitlab.com/soerenschneider/prometheus-rules">prometheus rules</a></li>
 <li><a href="https://gitlab.com/soerenschneider/ansible-roles/-/blob/master/dullmonitor/files/dullmonitor">monitoring the prometheus stack</a></li>
 <li>&hellip;</li>
 </ul>
 <h3 id="selinux-modules">SELinux Modules</h3>
 <p>You also believe people that recommend the first thing to do after booting up a RHEL is to disable SELinux are whiny losers? <a href="https://gitlab.com/soerenschneider/traefik-selinux">You&rsquo;re</a> <a href="https://gitlab.com/soerenschneider/transmission-selinux">god damn</a> <a href="https://gitlab.com/soerenschneider/taskd-selinux">right</a> ;-)</p>
 <h3 id="bootstrapping-my-openbsd-router">Bootstrapping my OpenBSD router</h3>
-<p>Also using an Ansible playbook, I&rsquo;m able to bootstrap a 100% working OpenBSD router in a couple of minutes, with features including:</p>
+<p>Also using an Ansible playbook, I&rsquo;m able to bootstrap my OpenBSD-based router running on an <a href="https://www.pcengines.ch/apu2.htm">APU2</a> within a couple of minutes.</p>
 <ul>
-<li>Generating complex network structure by using configuration as code</li>
-<li>Firewall rules as configuration as code</li>
+<li>Use a model (configuration as code) to build complex firewall rules, DNS entries and entire network configuration</li>
 <li>Observability using prometheus and custom exporters</li>
-<li>DNS adblocker with continous updates</li>
+<li>DNS adblocking with continous updates, similar to Pihole</li>
 <li>Self-made dynamic DNS implementation using AWS Route53 and AWS Lambda</li>
 <li>Traffic shaping</li>
 </ul>

@@ -99,19 +99,18 @@
 
     <h2 id="abstract">Abstract</h2>
 <p>While still pursuing my bachelor&rsquo;s degree, I gained my first work experience being a Research Assistant at <a href="https://www.iese.fraunhofer.de/">Fraunhofer IESE</a> and was working there until I graduated with a master&rsquo;s degree, 5 years later. After one and a half years of gaining experience at my first full time job, I had a rather radical switch at a fully remote, Switzerland-based startup. Being the first technical employee at the startup, I had substantial freedom in designing (from a technical perspective) and implementing the whole initial product. When the product gained more and more success, I was able to join my passions and figure out what it means to operate a SaaS product in a professional manor. After 4 years I decided to pick up a new challenge, working as a Cloud Engineer.</p>
-<h2 id="cloud-engineer--rdhttpswwwrewe-digitalcom-2018--now"><a href="https://www.rewe-digital.com/">CLOUD ENGINEER @ RD</a>, 2018 – now</h2>
-<p>In November 2018, I started working at a rather large company whose vision is innovating and leading the food retail digitization in Germany. I ended up in a 2-pizza platform/foundation team which is responsible for both operating a large fulfillment platform and providing cloud-native building blocks.</p>
+<h2 id="cloud-engineer--rdhttpswwwrewe-digitalcom-112018--now"><a href="https://www.rewe-digital.com/">CLOUD ENGINEER @ RD</a>, 11/2018 – now</h2>
+<p>In November 2018, I started working at a rather large company whose vision is innovating and leading the food retail digitization in Germany. I ended up in an agile 2-pizza platform/foundation team which is responsible for both operating a large fulfillment platform and providing cloud-native building blocks.</p>
 <p>These building blocks</p>
 <ul>
 <li>offer ready-to-use additions to the GKE/GCE platform that help solve common cloud problems such as monitoring, networking, transparency, secrets management, cost control, backups, etc.</li>
 <li>are either self-written software, pre-configured sets of 3rd party software or both.</li>
 <li>are used as a multiplicator for other internal teams</li>
 </ul>
-<p>We typically try to follow the SRE approach of using max 50% of the time to operate the platform and the other time to automate toil away.</p>
+<p>We typically try to follow the SRE approach of using max 50% of the time to operate the platform and the other time to get rid of toil and improving the platform by writing dedicated (automation) software.</p>
 <h4 id="responsibilities--tasks">RESPONSIBILITIES / TASKS:</h4>
 <ul>
 <li>Active contribution to the evolution of the platform, especially in regards of (cost) transparency, maintainability, scalability and robustness</li>
-<li>Operating a platform using Google Cloud</li>
 <li>Proactively preventing issues and allowing faster MBR by writing automation software</li>
 <li>Providing help across team boundaries for devs</li>
 <li>Performing Kubernetes on-boarding for new colleagues</li>
@@ -121,28 +120,30 @@
 <ul>
 <li>Google Cloud: GKE, GCE, IAP, Cloud SQL, Cloud Functions, Datastore, Pub Sub, Kafka, Stackdriver</li>
 <li>Golang, Python, Shell</li>
-<li>Hashicorp Vault, Terraform</li>
-<li>Prometheus, Grafana, Cortex</li>
+<li>Hashicorp Vault, Terraform, Helm</li>
+<li>Prometheus-stack, Grafana</li>
 <li>Jenkins, GitHub Enterprise</li>
 </ul>
 <hr>
-<h2 id="cloud-operations-manager--cdqhttpswwwcdqchdata-sharingdata-sharing-community-2015--2018"><a href="https://www.cdq.ch/data-sharing/data-sharing-community">CLOUD OPERATIONS MANAGER @ CDQ</a>, 2015&ndash;2018</h2>
-<p>As the company grew considerably in 2016, so did the number of different hats to wear - new roles with different responsibilities were defined. My responsibilities transitioned to being almost platform-exclusive. I was still integral member of the software architectural board, pushing topics related to cloud-computing problems. The first <em>baptême du feu</em> was planning the future cloud architecture at AWS and performing its migration.</p>
+<h2 id="cloud-operations-manager--cdqhttpswwwcdqchdata-sharingdata-sharing-community-012017--112018"><a href="https://www.cdq.ch/data-sharing/data-sharing-community">CLOUD OPERATIONS MANAGER @ CDQ</a>, 01/2017&ndash;11/2018</h2>
+<p>As the company grew considerably, the operations part became more and more critical to success. As I was the employee with the most experience in networking and running workloads, I took over the newly created role and was responsible for the cloud operations segment. After already conducting some longer running tests with AWS, my first <em>baptême du feu</em> was planning the future cloud architecture at AWS and performing its migration.</p>
 <h4 id="responsibilities--tasks-1">RESPONSIBILITIES / TASKS:</h4>
 <ul>
 <li>Providing and operating a scalable and robust platform
 <ul>
 <li>Planned and realized AWS cloud architecture</li>
 <li>Performed migration from Swisscom Enterprise Cloud Solution to AWS</li>
-<li>Providing development tools (CI/CD, Artifact storage, config server)</li>
 <li>Providing dynamic staging  and testing environments</li>
 <li>Analyzing performance-, security- and network-related issues</li>
 <li>Monitoring infrastructure- and service health</li>
 </ul>
 </li>
+<li>Containerized all workloads</li>
 <li>Positioning cloud contextual topics at architectural board
 <ul>
-<li>Eliminating state, container lifetimes, consensus, cgroup limits, &hellip;</li>
+<li>Getting rid of state</li>
+<li>Dealing with network failures</li>
+<li>Determining and obeying cgroup limits</li>
 </ul>
 </li>
 <li>Guidance for team members
@@ -154,6 +155,7 @@
 </li>
 <li>Infrastructure documentation and compliance</li>
 <li>Realization, verification and instrumentation of backups</li>
+<li>Smaller selfservices</li>
 <li>Cost management</li>
 </ul>
 <h4 id="technologies-1">TECHNOLOGIES:</h4>
@@ -165,30 +167,44 @@
 <li>Jenkins, Sonarqube, Nexus</li>
 </ul>
 <hr>
-<h2 id="software-architect--cdqhttpswwwcdqchdata-sharingdata-sharing-community-2015--2018"><a href="https://www.cdq.ch/data-sharing/data-sharing-community">SOFTWARE ARCHITECT @ CDQ</a> 2015&ndash;2018</h2>
-<p>In January 2015 I started working for the Switzerland-based startup whose vision is to improve master data quality related to business partners. Working as a software architect and being the only employee besides my supervisor gave me a great deal of freedom in the realization of the product. As a result, a successful SaaS platform that allows corporations to anonymously share and thus improve their data was created. Later, more and more related services, such as bank fraud detection and -prevention, were added to the product. Seeing the company&rsquo;s still flourishing after having had so much responsibility in its early stages makes me feel both gratified and satisfied, for being given the chance and for having succeeded.</p>
+<h2 id="software-architect--cdqhttpswwwcdqchdata-sharingdata-sharing-community-012015--122016"><a href="https://www.cdq.ch/data-sharing/data-sharing-community">SOFTWARE ARCHITECT @ CDQ</a> 01/2015&ndash;~12/2016</h2>
+<p>In January 2015 I started working for the Switzerland-based startup whose vision is to improve master data quality related to business partners. As I was the first technical employee, I translated and realized all initial business requirements as a working software solution that proved itself over the years. The resulting SaaS platform allowed corporations to share and thus improve their data. Later, more and more related services, such as bank fraud detection and -prevention, were added to the product.</p>
+<p>Due to the startup&rsquo;s success, its mothership company was able to shift its business model from offering classical consulting services to a &lsquo;tool-based consulting&rsquo; approach, using the internally-built and tailored tools closely with (potential) customers. Seeing the company&rsquo;s still flourishing and growing after having had so much responsibility in its early stages makes me feel both gratified and satisfied, for being given the chance and for having succeeded.</p>
 <h4 id="responsibilities--tasks-2">RESPONSIBILITIES / TASKS:</h4>
 <ul>
-<li>Creating a MVP of the data sharing SaaS products
+<li>Creating a MVP of the data sharing SaaS product
 <ul>
 <li>Defining SaaS components</li>
 <li>Providing Swisscom Enterprise Cloud Infrastructure</li>
-<li>Implementation work using tracer approach</li>
-<li>(Initial) API Design</li>
+<li>API Design</li>
+<li>Domain model design</li>
+<li>Database design</li>
+</ul>
+</li>
+<li>Translating business requirements into technical solutions
+<ul>
+<li>Writing epics and user stories</li>
+<li>Defining architecture</li>
+</ul>
+</li>
+<li>Defining development process</li>
+<li>Building CI Pipelines
+<ul>
+<li>Providing software testing stack via Docker compose</li>
+<li>SonarQube ownership</li>
 </ul>
 </li>
 <li>Documentation of software architecture and architectural choices</li>
-<li>Data model designs</li>
-<li>Providing local software testing stack via Docker</li>
+<li>Realiziation of smaller side-projects</li>
 </ul>
 <h4 id="technologies-2">TECHNOLOGIES:</h4>
 <ul>
-<li>Java, Gradle</li>
-<li>Spring (-boot, -data, -security, -cloud, -batch), Hibernate/JPA, JMS</li>
-<li>MySQL, Redis, Apache Solr, ElasticSearch, OpenLDAP, simpleSAML, (Bamboo), Jenkins, OpenVPN, MongoDB</li>
+<li>Java, Spring (-boot, -data, -security, -cloud, -batch), Hibernate, JMS, Gradle</li>
+<li>Jenkins, Bamboo, SonarKube, Docker</li>
+<li>MySQL, MongoDB, Redis, Apache Solr, ElasticSearch, OpenLDAP, simpleSAML, OpenVPN</li>
 </ul>
 <hr>
-<h2 id="software-developer--opencmshttpwwwopencmsorgen-2013--2015"><a href="http://www.opencms.org/en/">SOFTWARE DEVELOPER @ OpenCMS</a>, 2013&ndash;2015</h2>
+<h2 id="software-developer--opencmshttpwwwopencmsorgen-062013--122014"><a href="http://www.opencms.org/en/">SOFTWARE DEVELOPER @ OpenCMS</a>, 06/2013&ndash;12/2014</h2>
 <p>Being mainly driven by the idealistic motive of getting paid working on Open Source software, I got my first full-time job working as a software developer on OpenCMS. My main tasks included:</p>
 <ul>
 <li>Working on OpenCMS</li>
