@@ -7,17 +7,20 @@
     <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="SÖREN SCHNEIDER">
-    <meta name="description" content="Cool stuff at work Google IAP Kubernetes Controller To allow an uncomplicated exposal of Kubernetes services via a secured Google Identity Aware Proxy, we wrote a Kubernetes Controller that solely works on appropriate labels on the K8s service resources. To be 100% sure that the service is not being exposed publicly (in case Google IAP has trouble), an envoy proxy is injected as a sidecar that performs mandatory JWT verification.">
+    <meta name="description" content="Projects at work GitHub Enterpise Migration Conception &amp; realization of scalable internal Github Actions Runner infrastructure. Building and operating a service that regularly rotates individual runner tokens for all business units. Providing customized tooling (Terraform &amp; POSIX) to support our engineers to migrate more than 3500 repositories from Bitbucket to GitHub with minimal friction.
+Google IAP Kubernetes Controller To allow an uncomplicated exposal of Kubernetes services via a secured Google Identity Aware Proxy, we wrote a Kubernetes Controller that solely works on appropriate labels on the K8s service resources.">
     <meta name="keywords" content="blog,developer,personal">
 
     
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Projects"/>
-<meta name="twitter:description" content="Cool stuff at work Google IAP Kubernetes Controller To allow an uncomplicated exposal of Kubernetes services via a secured Google Identity Aware Proxy, we wrote a Kubernetes Controller that solely works on appropriate labels on the K8s service resources. To be 100% sure that the service is not being exposed publicly (in case Google IAP has trouble), an envoy proxy is injected as a sidecar that performs mandatory JWT verification."/>
+<meta name="twitter:description" content="Projects at work GitHub Enterpise Migration Conception &amp; realization of scalable internal Github Actions Runner infrastructure. Building and operating a service that regularly rotates individual runner tokens for all business units. Providing customized tooling (Terraform &amp; POSIX) to support our engineers to migrate more than 3500 repositories from Bitbucket to GitHub with minimal friction.
+Google IAP Kubernetes Controller To allow an uncomplicated exposal of Kubernetes services via a secured Google Identity Aware Proxy, we wrote a Kubernetes Controller that solely works on appropriate labels on the K8s service resources."/>
 
     <meta property="og:title" content="Projects" />
-<meta property="og:description" content="Cool stuff at work Google IAP Kubernetes Controller To allow an uncomplicated exposal of Kubernetes services via a secured Google Identity Aware Proxy, we wrote a Kubernetes Controller that solely works on appropriate labels on the K8s service resources. To be 100% sure that the service is not being exposed publicly (in case Google IAP has trouble), an envoy proxy is injected as a sidecar that performs mandatory JWT verification." />
+<meta property="og:description" content="Projects at work GitHub Enterpise Migration Conception &amp; realization of scalable internal Github Actions Runner infrastructure. Building and operating a service that regularly rotates individual runner tokens for all business units. Providing customized tooling (Terraform &amp; POSIX) to support our engineers to migrate more than 3500 repositories from Bitbucket to GitHub with minimal friction.
+Google IAP Kubernetes Controller To allow an uncomplicated exposal of Kubernetes services via a secured Google Identity Aware Proxy, we wrote a Kubernetes Controller that solely works on appropriate labels on the K8s service resources." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.soerenschneider.com/projects/" />
 <meta property="article:published_time" content="2019-10-18T09:37:50+02:00" />
@@ -58,7 +61,7 @@
     <link rel="icon" type="image/png" href="https://www.soerenschneider.com/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://www.soerenschneider.com/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.74.3" />
+    <meta name="generator" content="Hugo 0.76.5" />
   </head>
 
   
@@ -106,7 +109,9 @@
       <h1>Projects</h1>
     </header>
 
-    <h1 id="cool-stuff-at-work">Cool stuff at work</h1>
+    <h1 id="projects-at-work">Projects at work</h1>
+<h3 id="github-enterpise-migration">GitHub Enterpise Migration</h3>
+<p>Conception &amp; realization of scalable internal Github Actions Runner infrastructure. Building and operating a service that regularly rotates individual runner tokens for all business units. Providing customized tooling (Terraform &amp; POSIX) to support our engineers to migrate more than 3500 repositories from Bitbucket to GitHub with minimal friction.</p>
 <h3 id="google-iap-kubernetes-controller">Google IAP Kubernetes Controller</h3>
 <p>To allow an uncomplicated exposal of Kubernetes services via a secured Google Identity Aware Proxy, we wrote a Kubernetes Controller that solely works on appropriate labels on the K8s service resources. To be 100% sure that the service is not being exposed publicly (in case Google IAP has trouble), an <a href="https://www.envoyproxy.io/">envoy proxy</a> is injected as a sidecar that performs mandatory JWT verification.</p>
 <h3 id="synchronizing-secrets-from-hashicorp-vault">Synchronizing secrets from Hashicorp Vault</h3>
@@ -130,7 +135,7 @@
 <p>Concept and realization of an easily configurable, high-performance concurrent service that improves business partner data. The data was read from a queue, ran through several <em>curation elements</em> and was written to a new MongoDB collection. The list of elements and their order was dymanic and interchangable. A single data element could take various paths down the curator based on its attributes, e.g. a certain country, a certain &ldquo;legal form&rdquo;. A curation element could alter (e.g. transliteration) and also flag (e.g. &ldquo;legal form is invalid for given country&rdquo;) data. Several permutations of configuration could be performed, to find the best settings for input data.</p>
 <h3 id="providing-scalable-enterprise-ready-semantic-mediawiki-stacks">Providing scalable, enterprise-ready Semantic MediaWiki stacks</h3>
 <p>Using both CloudFormation and Ansible I was able to roll-out a scalable <a href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki">Semantic Media Wiki</a> providing Single Sign On capabilities with few effort. The resulting VMs were part of Auto Scaling Groups and were backed by Docker images. SPARQL queries were answered by an Apache Fuseki.</p>
-<h1 id="private-projects">Private projects</h1>
+<h1 id="projects--home">Projects @ home</h1>
 <h3 id="bootstrapping-my-environment">Bootstrapping My Environment</h3>
 <p>You got your dotfiles checked in git repository? That&rsquo;s cool, but that doesn&rsquo;t really cut it for me, personally. There&rsquo;s still no packages installed. What about secrets? What about different configuration for different machines?</p>
 <p>I securely bootstrap my whole environment within a couple of minutes, only using my personal nitrokey, <a href="https://gitlab.com/soerenschneider/bootstrap">an ansible playbook and a little bit of shell script</a>. All dotfiles are checked out &amp; linked, software is being compiled, all packages installed and local passwords are safely initialized.</p>
