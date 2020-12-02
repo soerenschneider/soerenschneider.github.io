@@ -14,7 +14,7 @@
       
       <guid>https://www.soerenschneider.com/projects/</guid>
       <description>Projects at work GitHub Enterpise Migration Conception &amp;amp; realization of scalable internal Github Actions Runner infrastructure. Building and operating a service that regularly rotates individual runner tokens for all business units. Providing customized tooling (Terraform &amp;amp; POSIX) to support our engineers to migrate more than 3500 repositories from Bitbucket to GitHub with minimal friction.
-Google IAP Kubernetes Controller To allow an uncomplicated exposal of Kubernetes services via a secured Google Identity Aware Proxy, we wrote a Kubernetes Controller that solely works on appropriate labels on the K8s service resources.</description>
+Chaos Engineering Co-founder of the Chaos Engineering guild that serves as force for the adoption of Chaos Engineering principles at our employer, Rewe Digital.</description>
     </item>
     
     <item>
