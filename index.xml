@@ -13,8 +13,7 @@
       <pubDate>Fri, 18 Oct 2019 09:37:50 +0200</pubDate>
       
       <guid>https://www.soerenschneider.com/projects/</guid>
-      <description>Projects at work GitHub Enterpise Migration Conception &amp;amp; realization of scalable internal Github Actions Runner infrastructure. Building and operating a service that regularly rotates individual runner tokens for all business units. Providing customized tooling (Terraform &amp;amp; POSIX) to support our engineers to migrate more than 3500 repositories from Bitbucket to GitHub with minimal friction.
-Chaos Engineering Co-founder of the Chaos Engineering guild that serves as force for the adoption of Chaos Engineering principles at our employer, Rewe Digital.</description>
+      <description>Projects at work Chaos Engineering Co-founder of the Chaos Engineering guild that serves as force for the adoption of Chaos Engineering principles at our employer, Rewe Digital. We evaluate tools in the context of Chaos Engineering, provide introduction lessons &amp;amp; workshops, do consultation work and moderate our teams&#39; Gamedays. After hosting several Gamedays for other teams, we also started offering Firedrills, based on common scenarios across our tech-stack (how much is your backup scenario worth if you don&amp;rsquo;t know if it works?</description>
     </item>
     
     <item>
@@ -23,7 +22,7 @@ Chaos Engineering Co-founder of the Chaos Engineering guild that serves as force
       <pubDate>Thu, 01 Nov 2018 14:44:35 +0200</pubDate>
       
       <guid>https://www.soerenschneider.com/cv/</guid>
-      <description>Abstract While still pursuing my bachelor&amp;rsquo;s degree, I gained my first work experience being a Research Assistant at Fraunhofer IESE and was working there until I graduated with a master&amp;rsquo;s degree, 5 years later. After one and a half years of gaining experience at my first full time job, I had a rather radical switch at a fully remote, Switzerland-based startup. Being the first technical employee at the startup, I had substantial freedom in designing (from a technical perspective) and implementing the whole initial product.</description>
+      <description>Abstract With 10+ years of experience working in the industry, I did a full circle iteration: After starting out in software development &amp;amp; architecture, I was responsible (and accountable) for operating distributed systems at scale and recently focussed more on topics around resilience, managing risks and software quality in general. As I&amp;rsquo;ve come across some different technologies, I would describe my main strength as knowing a little bit about a lot of different topics.</description>
     </item>
     
     <item>
@@ -32,8 +31,8 @@ Chaos Engineering Co-founder of the Chaos Engineering guild that serves as force
       <pubDate>Wed, 28 Mar 2018 19:58:44 +0200</pubDate>
       
       <guid>https://www.soerenschneider.com/about/</guid>
-      <description>Hi! I&amp;rsquo;ve been living in Cologne for the last couple of years. I&amp;rsquo;m working as a Cloud Engineer, being responsible for creating reusable Cloud Components and solving &amp;amp; proactively preventing problems in the context of our online retailing platform. Before that, I was working as a operations guy and software architect. Kind of jack of all trades-person despite working in a specialist fields.
-I also like to spend my spare time around techy stuff, such as writing code, reading technical books/articles, running way too much infrastructure, checking out new technologies/tools or short: practicing improvement.</description>
+      <description>Hi! After living in Köln for almost ten years, I recently moved further up the Rhine to Düsseldorf. I&amp;rsquo;m working as a Cloud Engineer, being responsible for creating reusable Cloud Components and solving &amp;amp; proactively preventing problems in the context of our online retailing platform. Before that, I was working as a operations guy and software architect. Kind of jack of all trades-person despite working in a specialist fields.
+I also like to invest a good portion of my spare time on techy stuff: coding, reading technical books, running (semi-)professional home labs, trying to keep up with new technologies or paradigms – or short: practicing continuous improvement.</description>
     </item>
     
   </channel>
