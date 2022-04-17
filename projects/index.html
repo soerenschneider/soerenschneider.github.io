@@ -4,20 +4,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="en">
-
-    <meta name="author" content="SÖREN SCHNEIDER">
-    <meta name="description" content="Projects at work Chaos Engineering Co-founder of the Chaos Engineering guild that serves as force for the adoption of Chaos Engineering principles at our employer, Rewe Digital. We evaluate tools in the context of Chaos Engineering, provide introduction lessons &amp; workshops, do consultation work and moderate our teams&#39; Gamedays. After hosting several Gamedays for other teams, we also started offering Firedrills, based on common scenarios across our tech-stack (how much is your backup scenario worth if you don&rsquo;t know if it works?">
-    <meta name="keywords" content="blog,developer,personal">
+    <meta name="color-scheme" content="light dark">
 
     
 
+    <meta name="author" content="Sören Schneider">
+    <meta name="description" content="Projects @ home    The Time I Accidentally Built My Own &ldquo;Cloud&rdquo; Platform    During the pandemic I leveraged the fact that I&rsquo;m having deployed hardware on three different, geo-distributed regions and I semi-consciounsly built my own highly-available, on-premise &ldquo;Cloud&rdquo; platform.
+I used existing software components I already have knowledge in and additionally wrote some software myself.
+
+WRITTEN SOFTWARE     Manage SSH (host) certificates using Hashicorp Vault Manage client certificates using Hashicorp Vault Automatically manage Vault AppRoles Automatically unlock stuff using Vault Request x509 certs via LetsEncrypt and distribute via Vault to private hosts Detect IP changes and update predefined DNS records through signed messages via MQTT  APPS LAYER     Highly available monitoring running Prometheus stack Federated Prometheus cluster on top of Cortex Logging based on Loki  PLATFORM LAYER     Running a Hashicorp Vault cluster configured using terraform.">
+    <meta name="keywords" content="developer,it,cloud,software engineering,devops,secops,devsecops">
+
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Projects"/>
-<meta name="twitter:description" content="Projects at work Chaos Engineering Co-founder of the Chaos Engineering guild that serves as force for the adoption of Chaos Engineering principles at our employer, Rewe Digital. We evaluate tools in the context of Chaos Engineering, provide introduction lessons &amp; workshops, do consultation work and moderate our teams&#39; Gamedays. After hosting several Gamedays for other teams, we also started offering Firedrills, based on common scenarios across our tech-stack (how much is your backup scenario worth if you don&rsquo;t know if it works?"/>
+<meta name="twitter:description" content="Projects @ home    The Time I Accidentally Built My Own &ldquo;Cloud&rdquo; Platform    During the pandemic I leveraged the fact that I&rsquo;m having deployed hardware on three different, geo-distributed regions and I semi-consciounsly built my own highly-available, on-premise &ldquo;Cloud&rdquo; platform.
+I used existing software components I already have knowledge in and additionally wrote some software myself.
+
+WRITTEN SOFTWARE     Manage SSH (host) certificates using Hashicorp Vault Manage client certificates using Hashicorp Vault Automatically manage Vault AppRoles Automatically unlock stuff using Vault Request x509 certs via LetsEncrypt and distribute via Vault to private hosts Detect IP changes and update predefined DNS records through signed messages via MQTT  APPS LAYER     Highly available monitoring running Prometheus stack Federated Prometheus cluster on top of Cortex Logging based on Loki  PLATFORM LAYER     Running a Hashicorp Vault cluster configured using terraform."/>
 
     <meta property="og:title" content="Projects" />
-<meta property="og:description" content="Projects at work Chaos Engineering Co-founder of the Chaos Engineering guild that serves as force for the adoption of Chaos Engineering principles at our employer, Rewe Digital. We evaluate tools in the context of Chaos Engineering, provide introduction lessons &amp; workshops, do consultation work and moderate our teams&#39; Gamedays. After hosting several Gamedays for other teams, we also started offering Firedrills, based on common scenarios across our tech-stack (how much is your backup scenario worth if you don&rsquo;t know if it works?" />
+<meta property="og:description" content="Projects @ home    The Time I Accidentally Built My Own &ldquo;Cloud&rdquo; Platform    During the pandemic I leveraged the fact that I&rsquo;m having deployed hardware on three different, geo-distributed regions and I semi-consciounsly built my own highly-available, on-premise &ldquo;Cloud&rdquo; platform.
+I used existing software components I already have knowledge in and additionally wrote some software myself.
+
+WRITTEN SOFTWARE     Manage SSH (host) certificates using Hashicorp Vault Manage client certificates using Hashicorp Vault Automatically manage Vault AppRoles Automatically unlock stuff using Vault Request x509 certs via LetsEncrypt and distribute via Vault to private hosts Detect IP changes and update predefined DNS records through signed messages via MQTT  APPS LAYER     Highly available monitoring running Prometheus stack Federated Prometheus cluster on top of Cortex Logging based on Loki  PLATFORM LAYER     Running a Hashicorp Vault cluster configured using terraform." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.soerenschneider.com/projects/" /><meta property="article:section" content="" />
 <meta property="article:published_time" content="2019-10-18T09:37:50+02:00" />
@@ -25,9 +34,6 @@
 
 
 
-    
-      <base href="https://www.soerenschneider.com/projects/">
-    
     <title>
   Projects · soerenschneider
 </title>
@@ -36,22 +42,29 @@
       <link rel="canonical" href="https://www.soerenschneider.com/projects/">
     
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="preload" href="https://www.soerenschneider.com/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
     
       
       
-      <link rel="stylesheet" href="https://www.soerenschneider.com/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://www.soerenschneider.com/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css" integrity="sha256-2f3b/&#43;byfmmYXcX&#43;BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin="anonymous" media="screen" />
     
 
     
 
     
+      
+        
+        
+        <link rel="stylesheet" href="https://www.soerenschneider.com/css/coder-dark.min.002ee2378e14c7a68f1f0a53d9694ed252090987c4e768023fac694a4fc5f793.css" integrity="sha256-AC7iN44Ux6aPHwpT2WlO0lIJCYfE52gCP6xpSk/F95M=" crossorigin="anonymous" media="screen" />
+      
+    
 
     
-      <link rel="stylesheet" href="https://www.soerenschneider.com/css/extra-style.css" />
+      
+        
+        <link rel="stylesheet" href="https://www.soerenschneider.com/css/custom.min.2604954e36308362343fa3fa8c902e169fb09f39b618ff25c117916447c11509.css" integrity="sha256-JgSVTjYwg2I0P6P6jJAuFp&#43;wnzm2GP8lwReRZEfBFQk=" crossorigin="anonymous" media="screen" />
+      
     
 
     
@@ -59,14 +72,25 @@
     <link rel="icon" type="image/png" href="https://www.soerenschneider.com/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://www.soerenschneider.com/images/favicon-16x16.png" sizes="16x16">
 
+    <link rel="apple-touch-icon" href="https://www.soerenschneider.com/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.soerenschneider.com/images/apple-touch-icon.png">
+
     <meta name="generator" content="Hugo 0.85.0" />
   </head>
 
   
   
-  <body class="colorscheme-light"
-        onload=""
-  >
+    
+  
+  <body class="preload-transitions colorscheme-auto">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
@@ -74,26 +98,28 @@
       soerenschneider
     </a>
     
-    <input type="checkbox" id="menu-toggle" />
-    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
-    <ul class="navigation-list">
-      
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
         
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://www.soerenschneider.com/about/">ABOUT</a>
-          </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.soerenschneider.com/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.soerenschneider.com/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.soerenschneider.com/cv/">CV</a>
+            </li>
+          
         
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://www.soerenschneider.com/projects/">PROJECTS</a>
-          </li>
         
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://www.soerenschneider.com/cv/">CV</a>
-          </li>
-        
-      
-      
-    </ul>
+      </ul>
     
   </section>
 </nav>
@@ -104,72 +130,220 @@
   <section class="container page">
   <article>
     <header>
-      <h1>Projects</h1>
+      <h1 class="title">
+        <a class="title-link" href="https://www.soerenschneider.com/projects/">
+          Projects
+        </a>
+      </h1>
     </header>
 
-    <h1 id="projects-at-work">Projects at work</h1>
-<h3 id="chaos-engineering">Chaos Engineering</h3>
-<p>Co-founder of the Chaos Engineering guild that serves as force for the adoption of Chaos Engineering principles at our employer, Rewe Digital. We evaluate tools in the context of Chaos Engineering, provide introduction lessons &amp; workshops, do consultation work and moderate our teams' Gamedays. After hosting several Gamedays for other teams, we also started offering Firedrills, based on common scenarios across our tech-stack (how much is your backup scenario worth if you don&rsquo;t know if it works?). Further, we started finding the biggest risks of our own components by performing SFMEAs and plan to offer SFMEA consulting for other teams as well.</p>
-<h3 id="github-enterpise-migration">GitHub Enterpise Migration</h3>
-<p>We worked on the conception &amp; realization of a modern, scalable, self-hosted GitHub Actions Runner infrastructure. Building and operating a service that regularly rotates individual runner tokens for all business units. Providing customized tooling (Terraform &amp; POSIX) to support our engineers to migrate more than 3500 repositories from Bitbucket to GitHub with minimal friction.</p>
-<h3 id="google-iap-kubernetes-controller">Google IAP Kubernetes Controller</h3>
-<p>To allow an uncomplicated exposal of Kubernetes services via a secured Google Identity Aware Proxy, we wrote a Kubernetes Controller that solely works on appropriate labels on the K8s service resources. To be 100% sure that the service is not being exposed publicly (in case Google IAP has trouble), an <a href="https://www.envoyproxy.io/">envoy proxy</a> is injected as a sidecar that performs mandatory JWT verification.</p>
-<h3 id="synchronizing-secrets-from-hashicorp-vault">Synchronizing secrets from Hashicorp Vault</h3>
-<p>We wrote a critical component that reads secrets from Hashicorp Vault and synchronizes them unidirectionally to interchangeable backend. It is possible to consume (re-read) a certain secret on each interval or reading the secret once and extending its lease variably before its expiry. The provided backends currently support writing the secret as a Kubernetes secret and writing as a file on Cloud Storage bucket.</p>
-<h3 id="graceful-pod-killer">Graceful Pod Killer</h3>
-<blockquote>
-<p>There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors</p>
-</blockquote>
-<p>I wrote a tool that is able to safely restart targeted Deployments. Targets can be auto-discovered by (multiple) labels, a certain secret they have mounted and/or their start date. After killing a pod, it waits until the replica is healthy again to continue with the next pod in line. This tool comes in handy for controlled chaos engineering operations or when you need to restart pods to force the consumption of an updated secret.</p>
-<h3 id="automatically-verifying-cloud-sql-backups">Automatically verifying Cloud SQL backups</h3>
-<p>On more than one occasion we were facing incidents with Cloud SQL instances that got into a bad state and whose last <em>n</em> out of <em>m</em> backups were unusable. We decided to build a product using multiple Cloud Functions that automatically restores new Cloud SQL backups, verifies them, cleans up everything and notifies the owning team in case of problems.</p>
-<h3 id="get-notified-on-outdated-docker-images-in-kubernetes">Get notified on outdated Docker images in Kubernetes</h3>
-<p>During several &lsquo;Learning Friday&rsquo; sessions I wrote a POC that checks whether running pods use outdated docker images. To inspect a cluster, an agent is deployed that gathers the needed information via internal Kubernetes API calls and reports back via Pub Sub to the master. In the master, the docker image string is disassembled. After that, a call against the appropriate image registry&rsquo;s API is performed, checking out the available versions and writes the information to a SQL database. Versions were compared and on a version skew, teams were notified via prometheus.</p>
-<h3 id="cloud-functions-metrics-exporter">Cloud Functions metrics exporter</h3>
-<p>When using Cloud Functions we wanted to be able to use fine-grained monitoring for our functions. Due to the nature of Cloud Functions still being early beta, it wasn&rsquo;t possible to peer them to our GKE network. Therefore we weren&rsquo;t able to use Prometheus Pushgateway (as it is exposed only inside the clusters) or scrape them like regular targets (due to their low runtime, networking, &hellip;).</p>
-<p>As the functions were all triggered using Pub Sub, we decided to write a Prometheus exporter that receives metrics in raw Prometheus text format dispatched via Pub Sub once the function finished.</p>
-<h3 id="aws-cloud-architecture--migration">AWS Cloud Architecture &amp; Migration</h3>
-<p>The most challenging task undoubtedly was planning and migrating to the cloud architecture at AWS. Due to multiple constellations, the end date of the migration was already known before real planning started. After <em>a lot</em> of small, nightly iterations the transition was done, but not the work. The initial move involved almost only manual work, after the move to AWS I started to replicate the environment using IAC.</p>
-<p>With an ever increasing size of both team members and services, conflicts of the monolithic architecture became apparent. The first container orchestration used, was ECS. Due to its nature, being as dull as solid, it is the ideal solution for understaffed departments. Later on, there was the big shift towards a kops-created Kubernetes, unfortunately operated only by me.</p>
-<h3 id="business-partner-data-curation">Business Partner Data Curation</h3>
-<p>Concept and realization of an easily configurable, high-performance concurrent service that improves business partner data. The data was read from a queue, ran through several <em>curation elements</em> and was written to a new MongoDB collection. The list of elements and their order was dymanic and interchangable. A single data element could take various paths down the curator based on its attributes, e.g. a certain country, a certain &ldquo;legal form&rdquo;. A curation element could alter (e.g. transliteration) and also flag (e.g. &ldquo;legal form is invalid for given country&rdquo;) data. Several permutations of configuration could be performed, to find the best settings for input data.</p>
-<h3 id="providing-scalable-enterprise-ready-semantic-mediawiki-stacks">Providing scalable, enterprise-ready Semantic MediaWiki stacks</h3>
-<p>Using both CloudFormation and Ansible I was able to roll-out a scalable <a href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki">Semantic Media Wiki</a> providing Single Sign On capabilities with few effort. The resulting VMs were part of Auto Scaling Groups and were backed by Docker images. SPARQL queries were answered by an Apache Fuseki.</p>
-<h1 id="projects--home">Projects @ home</h1>
-<h3 id="failure-resilient-highly-configurable-infrastructure-as-configuration-edge-routers">Failure-resilient highly configurable infrastructure-as-configuration edge routers</h3>
-<p>I wrote quite some tooling to help me operating three geographically distributed edge routers running resflashed OpenBSD. In order to do that, OpenBSD releases for system updates and resflash images have to be regularly built, automated by Hashicorp Packer. For each location, 100% of its configuration lives in YAML files and is carried out via an Ansible playbook. This configuration consists of (easily rotatable) wireguard tunnels, PPPOE auth information, firewall rules, routing tables, subdomain configurations, etc.</p>
-<h3 id="federated-prometheus">Federated Prometheus</h3>
-<h3 id="notification-on-late-trams">Notification on Late Trams</h3>
-<p>Living in Cologne you&rsquo;ll realize the local public transportation company enjoys being spontaneous. Its <a href="https://kvb.koeln/service/open_data.html">&ldquo;OpenData&rdquo;</a> is more static than melting ice caps, so we need to fetch, parse and process the interesting bits ourselfes. There are 4 microservices that communicate via loosely coupled streams based on redis. Did someone say &lsquo;over-engineered&rsquo;? Maybe, but it was a fun project!</p>
+    <h1 id="projects--home">
+  Projects @ home
+  <a class="heading-link" href="#projects--home">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h2 id="the-time-i-accidentally-built-my-own-cloud-platform">
+  The Time I Accidentally Built My Own &ldquo;Cloud&rdquo; Platform
+  <a class="heading-link" href="#the-time-i-accidentally-built-my-own-cloud-platform">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>During the pandemic I leveraged the fact that I&rsquo;m having deployed hardware on three different, geo-distributed <em>regions</em> and I semi-consciounsly built my own highly-available, on-premise &ldquo;Cloud&rdquo; platform.</p>
+<p>I used existing software components I already have knowledge in and additionally wrote some software myself.</p>
+<p><a href="https://www.soerenschneider.com/img/soeren-platform.drawio.png"><img src="https://www.soerenschneider.com/img/soeren-platform.drawio.png" alt="imagen"></a></p>
+<h3 id="written-software">
+  WRITTEN SOFTWARE
+  <a class="heading-link" href="#written-software">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li><a href="https://github.com/soerenschneider/ssh-key-signer">Manage SSH (host) certificates using Hashicorp Vault</a></li>
+<li><a href="https://github.com/soerenschneider/vault-pki-cli">Manage client certificates using Hashicorp Vault</a></li>
+<li><a href="https://github.com/soerenschneider/scripts/blob/main/vault/vault_approle_cli.py">Automatically manage Vault AppRoles</a></li>
+<li><a href="https://github.com/soerenschneider/occult">Automatically unlock stuff using Vault</a></li>
+<li><a href="https://github.com/soerenschneider/acmevault">Request x509 certs via LetsEncrypt and distribute via Vault to private hosts</a></li>
+<li><a href="https://github.com/soerenschneider/dyndns">Detect IP changes and update predefined DNS records through signed messages via MQTT</a></li>
+</ul>
+<h3 id="apps-layer">
+  APPS LAYER
+  <a class="heading-link" href="#apps-layer">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>Highly available monitoring running Prometheus stack</li>
+<li>Federated Prometheus cluster on top of Cortex</li>
+<li>Logging based on Loki</li>
+</ul>
+<h3 id="platform-layer">
+  PLATFORM LAYER
+  <a class="heading-link" href="#platform-layer">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<ul>
+<li>Running a Hashicorp Vault cluster configured using <a href="https://github.com/soerenschneider/tf-vault">terraform</a>. Used for
+<ul>
+<li><a href="https://www.vaultproject.io/docs/secrets/identity">machine identities</a>, the foundation of every authentication and authorization</li>
+<li>internal PKIs, using x509 for client and host certificates</li>
+<li>SSH certificates, all SSH authentication is based on certificates instead of authorized keys</li>
+<li>static secrets, such as API tokens</li>
+<li>AWS secrets engine, dynamically create short-lived access tokens</li>
+<li>&hellip;</li>
+</ul>
+</li>
+<li>Highly available Minio Cluster running in distributed mode, installed using Ansible, configured via Terraform</li>
+<li>Running highly available MariaDB Galera cluster, configured using Ansible</li>
+<li>Single Sign On provided by Keycloak using OIDC, configured by terraform. Not highly available, yet</li>
+<li>Running highly available Kubernetes cluster installed using Kubespray, configured using GitOps</li>
+<li>Service discovery based on Consul, experiments ongoing in regards of Ansible dynamic inventory</li>
+</ul>
+<h3 id="infrastructure-layer">
+  INFRASTRUCTURE LAYER
+  <a class="heading-link" href="#infrastructure-layer">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<h4 id="openbsd-router">
+  OpenBSD Router
+  <a class="heading-link" href="#openbsd-router">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<ul>
+<li>All routers are built on top of <a href="https://www.pcengines.ch/apu2.htm">APU2</a> boards, running <a href="https://gitlab.com/bconway/resflash">resflash</a> to provide (almost) immutable infrastructure</li>
+<li>Routers configured using Ansible</li>
+</ul>
+<h4 id="linux-virtual-server-hosts">
+  Linux Virtual Server Hosts
+  <a class="heading-link" href="#linux-virtual-server-hosts">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<ul>
+<li>The host systems expose a minimal attack surface and only run libvirtd and a sshd server</li>
+<li>Automatic patch management in place</li>
+<li>Virtual machines are solely configured using <a href="https://github.com/soerenschneider/tf-libvirt">terraform</a></li>
+<li>Each machine has an associated <a href="https://www.vaultproject.io/docs/secrets/identity">identity</a> enabling zero trust networking</li>
+</ul>
+<h2 id="notification-on-late-trams">
+  Notification on Late Trams
+  <a class="heading-link" href="#notification-on-late-trams">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>While I was living in Cologne I realized the local public transportation company enjoyed being.. on the spontaneous side of life, so I created an overengineered solution to notify me on late trams. I ended up with 4 microservices that communicate via loosely coupled streams based on redis.</p>
 <ul>
 <li><a href="https://gitlab.com/soerenschneider/kfailb-scraper">scraping tram data</a></li>
 <li><a href="https://gitlab.com/soerenschneider/kfailb-parser">parsing scraped data</a></li>
 <li><a href="https://gitlab.com/soerenschneider/kfailb-bot">deduplication and notifying on late tram via telegram bot</a></li>
 <li><a href="https://gitlab.com/soerenschneider/k-fail-banal">storing data long term</a></li>
 </ul>
-<h3 id="home-automation">Home Automation</h3>
-<p>&ldquo;<em>I paid a lot of bucks for home automation and all I got is this lousy t-shirt</em>&rdquo;. Sounds familiar? Alternatively, you can do it yourself using Open Source components, which is super fun. I built some projects to read sensor data from my Raspberry Zero &amp; Arduino fleet, streaming it via MQTT and exposing metrics. Metrics allow both observability and also alerting on sensor data, e.g. humidity.</p>
+<h2 id="home-automation">
+  Home Automation
+  <a class="heading-link" href="#home-automation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Instead of relying on a commercial vendor, I spent some time on my DIY home automation based on Home Assistant and my fleet of Raspberry Zeros, Arduinos &amp; ESP2866s. I&rsquo;ve rewritten tools based on the excellent gobot framework to scrape and distribute all the sensor data:</p>
 <ul>
-<li><a href="https://gitlab.com/soerenschneider/pir-motion-raspberry">reading motion sensor data</a></li>
-<li><a href="https://gitlab.com/soerenschneider/mqtt-tempsensor">reading temperature sensor data</a></li>
-<li><a href="https://gitlab.com/soerenschneider/serial-sensor-reader">reading arbitrary analog sensor data over serial line</a>.</li>
-<li><a href="https://gitlab.com/soerenschneider/rc-switch-mqtt">executing commands via mqtt/home assistant switch</a></li>
+<li><a href="https://github.com/soerenschneider/gobot-pir">reading motion data</a></li>
+<li><a href="https://github.com/soerenschneider/gobot-bme280/">reading temperature data</a></li>
+<li><a href="https://github.com/soerenschneider/gobot-lux">reading brightness data</a></li>
+<li><a href="https://gitlab.com/soerenschneider/pir-motion-raspberry">(deprecated) reading motion sensor data</a></li>
+<li><a href="https://gitlab.com/soerenschneider/mqtt-tempsensor">(deprecated) reading temperature sensor data</a></li>
+<li><a href="https://gitlab.com/soerenschneider/serial-sensor-reader">(deprecated) reading arbitrary analog sensor data over serial line</a>.</li>
 </ul>
-<h3 id="automate-boring-stuff">Automate Boring Stuff</h3>
-<p>One downside of running (a lot of) self-hosted services is the resulting overhead of keeping everything running and secure. My ambition is to run and maintain all these (decentral) workloads with as little manual intervention as possible. Therefore I wrote <a href="https://gitlab.com/soerenschneider/ansible-roles">plenty of Ansible roles</a>, terraform modules and a small release management tool to automate <em>almost</em> everything. Thanks to automation, replacing cattle became an easy, fast and safe task.</p>
-<h3 id="oberservability">Oberservability</h3>
-<p>Automation is nice, but all the VMs and machines, running at different physical locations also need observability. Currently, each location is running its own prometheus stack &amp; grafana, but there&rsquo;s plans to use a centralized solution to send alerts from, such as <a href="https://github.com/cortexproject/cortex">cortex</a> or <a href="https://github.com/thanos-io/thanos">thanos</a>. I also wrote some KISS prometheus exporters, most of them using the node_exporter textfile functionality.</p>
-<ul>
-<li><a href="https://gitlab.com/soerenschneider/grafana">immutable grafana</a></li>
-<li><a href="https://gitlab.com/soerenschneider/mtail-programs">mtail programs</a></li>
-<li><a href="https://gitlab.com/soerenschneider/dhcpd-leases-exporter">dhcpd exporter</a></li>
-<li><a href="https://gitlab.com/soerenschneider/fail2ban-exporter">fail2ban exporter</a></li>
-<li><a href="https://gitlab.com/soerenschneider/prometheus-rules">prometheus rules</a></li>
-<li><a href="https://gitlab.com/soerenschneider/ansible-roles/-/blob/master/dullmonitor/files/dullmonitor">monitoring the prometheus stack</a></li>
-<li>&hellip;</li>
-</ul>
-<h3 id="selinux-modules">SELinux Modules</h3>
-<p>You also believe people that recommend the first thing to do after booting up a RHEL is to disable SELinux are whiny losers? <a href="https://gitlab.com/soerenschneider/traefik-selinux">You&rsquo;re</a> <a href="https://gitlab.com/soerenschneider/prometheus-selinux">god</a> <a href="https://gitlab.com/soerenschneider/transmission-selinux">damn</a> <a href="https://gitlab.com/soerenschneider/taskd-selinux">right</a> ;-)</p>
+<h1 id="projects-at-work">
+  Projects at work
+  <a class="heading-link" href="#projects-at-work">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h3 id="chaos-engineering">
+  Chaos Engineering
+  <a class="heading-link" href="#chaos-engineering">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Co-founder of the Chaos Engineering guild that serves as force for the adoption of Chaos Engineering principles at our employer, Rewe Digital. We evaluate tools in the context of Chaos Engineering, provide introduction lessons &amp; workshops, do consultation work and moderate our teams' Gamedays. After hosting several Gamedays for other teams, we also started offering Firedrills, based on common scenarios across our tech-stack (how much is your backup scenario worth if you don&rsquo;t know if it works?). Further, we started finding the biggest risks of our own components by performing SFMEAs and plan to offer SFMEA consulting for other teams as well.</p>
+<h3 id="github-enterpise-migration">
+  GitHub Enterpise Migration
+  <a class="heading-link" href="#github-enterpise-migration">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>We worked on the conception &amp; realization of a modern, scalable, self-hosted GitHub Actions Runner infrastructure. Building and operating a service that regularly rotates individual runner tokens for all business units. Providing customized tooling (Terraform &amp; POSIX) to support our engineers to migrate more than 3500 repositories from Bitbucket to GitHub with minimal friction.</p>
+<h3 id="google-iap-kubernetes-controller">
+  Google IAP Kubernetes Controller
+  <a class="heading-link" href="#google-iap-kubernetes-controller">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>To allow an uncomplicated exposal of Kubernetes services via a secured Google Identity Aware Proxy, we wrote a Kubernetes Controller that solely works on appropriate labels on the K8s service resources. To be 100% sure that the service is not being exposed publicly (in case Google IAP has trouble), an <a href="https://www.envoyproxy.io/">envoy proxy</a> is injected as a sidecar that performs mandatory JWT verification.</p>
+<h3 id="synchronizing-secrets-from-hashicorp-vault">
+  Synchronizing secrets from Hashicorp Vault
+  <a class="heading-link" href="#synchronizing-secrets-from-hashicorp-vault">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>We wrote a critical component that reads secrets from Hashicorp Vault and synchronizes them unidirectionally to interchangeable backend. It is possible to consume (re-read) a certain secret on each interval or reading the secret once and extending its lease variably before its expiry. The provided backends currently support writing the secret as a Kubernetes secret and writing as a file on Cloud Storage bucket.</p>
+<h3 id="graceful-pod-killer">
+  Graceful Pod Killer
+  <a class="heading-link" href="#graceful-pod-killer">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<blockquote>
+<p>There are 2 hard problems in computer science: cache invalidation, naming things, and off-by-1 errors</p>
+</blockquote>
+<p>I wrote a tool that is able to safely restart targeted Deployments. Targets can be auto-discovered by (multiple) labels, a certain secret they have mounted and/or their start date. After killing a pod, it waits until the replica is healthy again to continue with the next pod in line. This tool comes in handy for controlled chaos engineering operations or when you need to restart pods to force the consumption of an updated secret.</p>
+<h3 id="automatically-verifying-cloud-sql-backups">
+  Automatically verifying Cloud SQL backups
+  <a class="heading-link" href="#automatically-verifying-cloud-sql-backups">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>On more than one occasion we were facing incidents with Cloud SQL instances that got into a bad state and whose last <em>n</em> out of <em>m</em> backups were unusable. We decided to build a product using multiple Cloud Functions that automatically restores new Cloud SQL backups, verifies them, cleans up everything and notifies the owning team in case of problems.</p>
+<h3 id="get-notified-on-outdated-docker-images-in-kubernetes">
+  Get notified on outdated Docker images in Kubernetes
+  <a class="heading-link" href="#get-notified-on-outdated-docker-images-in-kubernetes">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>During several &lsquo;Learning Friday&rsquo; sessions I wrote a POC that checks whether running pods use outdated docker images. To inspect a cluster, an agent is deployed that gathers the needed information via internal Kubernetes API calls and reports back via Pub Sub to the master. In the master, the docker image string is disassembled. After that, a call against the appropriate image registry&rsquo;s API is performed, checking out the available versions and writes the information to a SQL database. Versions were compared and on a version skew, teams were notified via prometheus.</p>
+<h3 id="cloud-functions-metrics-exporter">
+  Cloud Functions metrics exporter
+  <a class="heading-link" href="#cloud-functions-metrics-exporter">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>When using Cloud Functions we wanted to be able to use fine-grained monitoring for our functions. Due to the nature of Cloud Functions still being early beta, it wasn&rsquo;t possible to peer them to our GKE network. Therefore we weren&rsquo;t able to use Prometheus Pushgateway (as it is exposed only inside the clusters) or scrape them like regular targets (due to their low runtime, networking, &hellip;).</p>
+<p>As the functions were all triggered using Pub Sub, we decided to write a Prometheus exporter that receives metrics in raw Prometheus text format dispatched via Pub Sub once the function finished.</p>
+<h3 id="aws-cloud-architecture--migration">
+  AWS Cloud Architecture &amp; Migration
+  <a class="heading-link" href="#aws-cloud-architecture--migration">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>The most challenging task undoubtedly was planning and migrating to the cloud architecture at AWS. Due to multiple constellations, the end date of the migration was already known before real planning started. After <em>a lot</em> of small, nightly iterations the transition was done, but not the work. The initial move involved almost only manual work, after the move to AWS I started to replicate the environment using IAC.</p>
+<p>With an ever increasing size of both team members and services, conflicts of the monolithic architecture became apparent. The first container orchestration used, was ECS. Due to its nature, being as dull as solid, it is the ideal solution for understaffed departments. Later on, there was the big shift towards a kops-created Kubernetes, unfortunately operated only by me.</p>
+<h3 id="business-partner-data-curation">
+  Business Partner Data Curation
+  <a class="heading-link" href="#business-partner-data-curation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Concept and realization of an easily configurable, high-performance concurrent service that improves business partner data. The data was read from a queue, ran through several <em>curation elements</em> and was written to a new MongoDB collection. The list of elements and their order was dymanic and interchangable. A single data element could take various paths down the curator based on its attributes, e.g. a certain country, a certain &ldquo;legal form&rdquo;. A curation element could alter (e.g. transliteration) and also flag (e.g. &ldquo;legal form is invalid for given country&rdquo;) data. Several permutations of configuration could be performed, to find the best settings for input data.</p>
+<h3 id="providing-scalable-enterprise-ready-semantic-mediawiki-stacks">
+  Providing scalable, enterprise-ready Semantic MediaWiki stacks
+  <a class="heading-link" href="#providing-scalable-enterprise-ready-semantic-mediawiki-stacks">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Using both CloudFormation and Ansible I was able to roll-out a scalable <a href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki">Semantic Media Wiki</a> providing Single Sign On capabilities with few effort. The resulting VMs were part of Auto Scaling Groups and were backed by Docker images. SPARQL queries were answered by an Apache Fuseki.</p>
 
   </article>
 </section>
@@ -178,29 +352,41 @@
 
       </div>
 
-      
-  <footer class="footer">
-    <section class="container">
-      
-      
-        ©
-        
-        2021
-         SÖREN SCHNEIDER 
-      
-      
-      
-    </section>
-  </footer>
+      <footer class="footer">
+  <section class="container">
+    ©
+    
+    2022
+     Sören Schneider 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
 
     </main>
 
     
+      
+      <script src="https://www.soerenschneider.com/js/coder.min.39a51230dce2ac866c049b52573e38bf60666af4bc63c1bdf203b9b2d95b1cd6.js" integrity="sha256-OaUSMNzirIZsBJtSVz44v2BmavS8Y8G98gO5stlbHNY="></script>
+    
+
+    
 
     
 
     
 
+    
+
+    
+
+    
+
+    
+
+    
   </body>
 
 </html>

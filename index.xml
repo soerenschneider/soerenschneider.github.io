@@ -13,7 +13,10 @@
       <pubDate>Fri, 18 Oct 2019 09:37:50 +0200</pubDate>
       
       <guid>https://www.soerenschneider.com/projects/</guid>
-      <description>Projects at work Chaos Engineering Co-founder of the Chaos Engineering guild that serves as force for the adoption of Chaos Engineering principles at our employer, Rewe Digital. We evaluate tools in the context of Chaos Engineering, provide introduction lessons &amp;amp; workshops, do consultation work and moderate our teams&#39; Gamedays. After hosting several Gamedays for other teams, we also started offering Firedrills, based on common scenarios across our tech-stack (how much is your backup scenario worth if you don&amp;rsquo;t know if it works?</description>
+      <description>Projects @ home    The Time I Accidentally Built My Own &amp;ldquo;Cloud&amp;rdquo; Platform    During the pandemic I leveraged the fact that I&amp;rsquo;m having deployed hardware on three different, geo-distributed regions and I semi-consciounsly built my own highly-available, on-premise &amp;ldquo;Cloud&amp;rdquo; platform.
+I used existing software components I already have knowledge in and additionally wrote some software myself.
+
+WRITTEN SOFTWARE     Manage SSH (host) certificates using Hashicorp Vault Manage client certificates using Hashicorp Vault Automatically manage Vault AppRoles Automatically unlock stuff using Vault Request x509 certs via LetsEncrypt and distribute via Vault to private hosts Detect IP changes and update predefined DNS records through signed messages via MQTT  APPS LAYER     Highly available monitoring running Prometheus stack Federated Prometheus cluster on top of Cortex Logging based on Loki  PLATFORM LAYER     Running a Hashicorp Vault cluster configured using terraform.</description>
     </item>
     
     <item>
@@ -22,7 +25,7 @@
       <pubDate>Thu, 01 Nov 2018 14:44:35 +0200</pubDate>
       
       <guid>https://www.soerenschneider.com/cv/</guid>
-      <description>Abstract With 10+ years of experience working in the industry, I did a full circle iteration: After starting out in software development &amp;amp; architecture, I was responsible (and accountable) for operating distributed systems at scale and recently focussed more on topics around resilience, managing risks and software quality in general. As I&amp;rsquo;ve come across some different technologies, I would describe my main strength as knowing a little bit about a lot of different topics.</description>
+      <description>Abstract     10+ years of working experience in the industry Started out as Software-Engineer and later Software-Architect, working more closely to Cloud Infrastructures for the last 5+ years Generally interested in Software Resilience, Distributed Systems and IT Security Knowledge (different levels) in AWS, Azure &amp;amp; Google Cloud Platform Writing software preferably in Golang and Python Currently getting deeper into Azure and trying to tackle the steep learning curve of Rust&amp;rsquo;s lifetimes  SENIOR CLOUD ENGINEER @ SAP FIONEER, 12/2021 &amp;ndash; NOW    CORE OBJECTIVES     Help shaping and implementing the MVP of SAP Fioneer&amp;rsquo;s Commercial Lending product  TASKS     Involved in building the company&amp;rsquo;s upcoming Azure architecture  TECHNOLOGIES     Golang, Python Azure  Kubernetes w.</description>
     </item>
     
     <item>
@@ -31,8 +34,8 @@
       <pubDate>Wed, 28 Mar 2018 19:58:44 +0200</pubDate>
       
       <guid>https://www.soerenschneider.com/about/</guid>
-      <description>Hi! After living in Köln for almost ten years, I recently moved further up the Rhine to Düsseldorf. I&amp;rsquo;m working as a Cloud Engineer, being responsible for creating reusable Cloud Components and solving &amp;amp; proactively preventing problems in the context of our online retailing platform. Before that, I was working as a operations guy and software architect. Kind of jack of all trades-person despite working in a specialist fields.
-I also like to invest a good portion of my spare time on techy stuff: coding, reading technical books, running (semi-)professional home labs, trying to keep up with new technologies or paradigms – or short: practicing continuous improvement.</description>
+      <description>Hi! After living in Köln for almost ten years, I recently moved further up the Rhine to Düsseldorf. I&amp;rsquo;m currently working as a Senior Cloud Engineer, but I&amp;rsquo;m kind of a jack of all trades, having worked in several similar positions and generally being interested in various technical topics.
+I also like to invest a good portion of my spare time on technology: coding, reading technical books, running (semi-)professional home labs, trying to keep up with new technologies or paradigms – or short: practicing continuous improvement.</description>
     </item>
     
   </channel>
