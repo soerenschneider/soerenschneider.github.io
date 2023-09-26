@@ -2,26 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.soerenschneider.com/projects/</loc>
+    <loc>https://hugo-profile.netlify.app/projects/</loc>
     <lastmod>2019-10-18T09:37:50+02:00</lastmod>
   </url><url>
-    <loc>https://www.soerenschneider.com/categories/</loc>
+    <loc>https://hugo-profile.netlify.app/categories/</loc>
     <lastmod>2018-11-01T14:44:35+02:00</lastmod>
   </url><url>
-    <loc>https://www.soerenschneider.com/cv/</loc>
+    <loc>https://hugo-profile.netlify.app/cv/</loc>
     <lastmod>2018-11-01T14:44:35+02:00</lastmod>
   </url><url>
-    <loc>https://www.soerenschneider.com/categories/professional/</loc>
+    <loc>https://hugo-profile.netlify.app/categories/professional/</loc>
     <lastmod>2018-11-01T14:44:35+02:00</lastmod>
   </url><url>
-    <loc>https://www.soerenschneider.com/</loc>
+    <loc>https://hugo-profile.netlify.app/</loc>
     <lastmod>2018-11-01T14:44:35+02:00</lastmod>
   </url><url>
-    <loc>https://www.soerenschneider.com/about/</loc>
+    <loc>https://hugo-profile.netlify.app/about/</loc>
     <lastmod>2018-03-28T19:58:44+02:00</lastmod>
   </url><url>
-    <loc>https://www.soerenschneider.com/series/</loc>
-  </url><url>
-    <loc>https://www.soerenschneider.com/tags/</loc>
+    <loc>https://hugo-profile.netlify.app/tags/</loc>
   </url>
 </urlset>
