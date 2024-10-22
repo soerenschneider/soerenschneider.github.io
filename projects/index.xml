@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>PROJECTS on SÖREN SCHNEIDER</title>
-    <link>https://hugo-profile.netlify.app/projects/</link>
-    <description>Recent content in PROJECTS on SÖREN SCHNEIDER</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 18 Oct 2019 09:37:50 +0200</lastBuildDate><atom:link href="https://hugo-profile.netlify.app/projects/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PROJECTS on SÖREN SCHNEIDER</title><link>https://www.soerenschneider.com/projects/</link><description>Recent content in PROJECTS on SÖREN SCHNEIDER</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 18 Oct 2019 09:37:50 +0200</lastBuildDate><atom:link href="https://www.soerenschneider.com/projects/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
